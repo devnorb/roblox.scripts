@@ -1,11 +1,5 @@
---[[ norb's scripts | https://dsc.gg/norb | Contact me -> @norby.dev_ ]]
 --[[
-
-MVSD ANTICHEAT BYPASS by @norby.dev_
-
-script should now fully work 100% - always
-script does not tamper with characterlabelhandler and other scripts anymore
-script optimizations
+MVSD AntiCheat bypass by @norbyv1
 
 needed functions:
 hookfunction, checkcaller 
