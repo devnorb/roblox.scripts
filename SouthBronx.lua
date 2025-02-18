@@ -1,6 +1,9 @@
 --[[
 South Bronx AntiCheat bypass by @norbyv1
 put this script in autoexec or it will NOT work
+
+needed functions:
+getconnections, hookfunction, getcallingscript, checkcaller, hookfunction, getscriptclosure
 ]]--
 
 for i, v in getconnections(game.ScriptContext.Error) do
