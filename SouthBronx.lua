@@ -10,7 +10,7 @@ for i, v in getconnections(game.ScriptContext.Error) do
     hookfunction(v.Function, function() end)
 end
 
-local old
+local old;
 old = hookfunction(getfenv, newcclosure(function(...)
     if not checkcaller() and getcallingscript():IsDescendantOf(game:GetService("Players").LocalPlayer.PlayerGui) then
         for i, v in pairs(getscriptclosure(getcallingscript())) do
