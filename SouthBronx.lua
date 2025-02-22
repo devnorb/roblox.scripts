@@ -12,7 +12,7 @@ end
 
 local old
 old = hookfunction(getfenv, newcclosure(function(...)
-    if not checkcaller() then
+    if not checkcaller() and getcallingscript():IsDescendantOf(game:GetService("Players").LocalPlayer.PlayerGui) then
         for i, v in pairs(getscriptclosure(getcallingscript())) do
             hookfunction(v, function() return task.wait(9e9) end)
         end
